@@ -2,7 +2,7 @@
   position: relative;
   &__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    box-shadow: $default-box-shadow;
     position: absolute;
     transition: all 0.2s;
     outline-offset: 2rem;
@@ -22,7 +22,7 @@
     &:hover {
       outline: 1.5rem solid $color-primary;
       transform: scale(1.05) translateY(-5px);
-      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      box-shadow: $default-box-shadow;
       z-index: 20;
     }
   }
