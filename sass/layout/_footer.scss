@@ -2,10 +2,21 @@
     background-color: $color-gray-dark-2;
     padding: 10rem 0;
     font-size: 1.4rem;
+    color: $color-gray-light-1;
+
+    @include respond(tab-port) {
+        width: 100%;
+        float: none;
+
+    }
 
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
@@ -17,7 +28,7 @@
         border-top: 1px solid $color-gray-light-1;
         padding-top: 2rem;
         display: inline-block;
-        
+
     }
 
     &__list {
@@ -42,15 +53,23 @@
             display: inline-block;
         }
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
             color: $color-primary;
             box-shadow: $default-box-shadow;
 
         }
     }
+
     &__copyright {
-        border-top:1px solid $color-gray-light-1;
+        border-top: 1px solid $color-gray-light-1;
         padding-top: 2rem;
         width: 80%;
+        float: right;
+
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+        }
     }
 }
